@@ -1,0 +1,98 @@
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  font-size: 10px;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--darkBlue);
+}
+
+.box {
+  position: relative;
+  flex-basis: 90%;
+  max-width: 600px;
+  min-height: 50vh;
+  padding: 50px 25px;
+  border-radius: 15px;
+  background-color: var(--darkGrayishBlue);
+  text-align: center;
+}
+
+.box__advice-number {
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: var(--neonGreen);
+  text-transform: uppercase;
+}
+
+.box__advice-text {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  color: var(--lightCyan);
+}
+
+.box__img {
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 8px var(--lightCyan);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  color: var(--grayishBlue);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .box {
+    min-height: 40vh;
+    padding: 60px 60px;
+  }
+
+  .box__advice-number {
+    margin-bottom: 40px;
+  }
+}
